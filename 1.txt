@@ -4,7 +4,8 @@
 添加文件 git add ./ 
 提交文件备注 git commit -m "提交名称"
 查看日志 git log 
-查看简单日志 git --oneline
+查看简单日志 git log --oneline
+回到以前提交的版本 git reset --hard [版本序列号]
 
 
 向GitHub上传文件
