@@ -1,1 +1,25 @@
-122
+初始化文件 git init 
+添加用户邮箱 git config --global user.email"123@qq.com"
+添加用户名称 git config --global user.name"名称"   //填写一次即可
+添加文件 git add ./ 
+提交文件备注 git commit -m "提交名称"
+查看日志 git log 
+查看简单日志 git --oneline
+
+
+向GitHub上传文件
+用https方法上传：
+1. git remote add origin git@github.com:piggy117/git1.git
+2. git push -u origin master
+//需要填写用户名和密码
+
+
+用ssh方法上传
+配置SSH文件  ssh-keygen -t rsa -C "xxxx@163.com"
+配置好之后在c盘用户里面找到.ssh文件 里面的id_rsa.pub文件 用记事本打开，复制粘贴到github中的setting里面的SSH文件里
+打上下面两行代码自动上传文件
+1. git remote add origin git@github.com:piggy117/git1.git
+2. git push -u origin master
+
+SSH方式不用验证
+
